@@ -4,19 +4,21 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  // Remplace 'ton-depot' par le nom de ton projet sur GitHub
+  base: '/Enafretmaquette1/',
+
   plugins: [
-    // The React and Tailwind plugins are both required for Make, even if
-    // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
   ],
+
   resolve: {
     alias: {
-      // Alias @ to the src directory
+      // Ton alias pour éviter les ../..
       '@': path.resolve(__dirname, './src'),
     },
   },
 
-  // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
+  // Types de fichiers supportés en import brut
   assetsInclude: ['**/*.svg', '**/*.csv'],
 })
