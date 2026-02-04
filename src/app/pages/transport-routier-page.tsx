@@ -58,7 +58,7 @@ export function TransportRoutierPage() {
           />
         </div>
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <div className="inline-flex items-center justify-center bg-blue-600 p-4 rounded-full mb-6">
+          <div className="inline-flex items-center justify-center bg-orange-600 p-4 rounded-full mb-6">
             <Truck className="h-12 w-12" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -98,7 +98,7 @@ export function TransportRoutierPage() {
                 <Card key={feature.title} className="text-center">
                   <CardContent className="p-6">
                     <div className="inline-flex items-center justify-center bg-blue-100 p-4 rounded-full mb-4">
-                      <Icon className="h-8 w-8 text-blue-600" />
+                      <Icon className="h-8 w-8 text-orange-600" />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                     <p className="text-gray-600">{feature.description}</p>
@@ -126,7 +126,7 @@ export function TransportRoutierPage() {
               <Card key={vehicle.title}>
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <Truck className="h-8 w-8 text-blue-600" />
+                    <Truck className="h-8 w-8 text-orange-600" />
                     <h3 className="text-2xl font-semibold">{vehicle.title}</h3>
                   </div>
                   <div className="mb-4">
@@ -161,7 +161,7 @@ export function TransportRoutierPage() {
                 "Gestion administrative complète",
               ].map((service) => (
                 <div key={service} className="flex items-start gap-3">
-                  <div className="bg-blue-600 rounded-full p-1 mt-1">
+                  <div className="bg-orange-600 rounded-full p-1 mt-1">
                     <svg
                       className="h-3 w-3 text-white"
                       fill="currentColor"
@@ -183,7 +183,7 @@ export function TransportRoutierPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-orange-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Besoin d'un transport routier ?
@@ -193,7 +193,7 @@ export function TransportRoutierPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/devis">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
                 Demander un devis
               </Button>
             </Link>

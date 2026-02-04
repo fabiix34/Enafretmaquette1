@@ -63,7 +63,7 @@ export function SolutionsLogistiquesPage() {
           />
         </div>
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <div className="inline-flex items-center justify-center bg-blue-600 p-4 rounded-full mb-6">
+          <div className="inline-flex items-center justify-center bg-orange-600 p-4 rounded-full mb-6">
             <Globe className="h-12 w-12" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -108,7 +108,7 @@ export function SolutionsLogistiquesPage() {
                   <CardContent className="p-8">
                     <div className="flex items-start gap-4">
                       <div className="bg-blue-100 p-3 rounded-lg">
-                        <Icon className="h-8 w-8 text-blue-600" />
+                        <Icon className="h-8 w-8 text-orange-600" />
                       </div>
                       <div>
                         <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
@@ -138,7 +138,7 @@ export function SolutionsLogistiquesPage() {
             {processSteps.map((step, index) => (
               <div key={step.number} className="relative">
                 <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 text-white rounded-full text-2xl font-bold mb-4">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-600 text-white rounded-full text-2xl font-bold mb-4">
                     {step.number}
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
@@ -171,7 +171,7 @@ export function SolutionsLogistiquesPage() {
                   "Concentration sur votre cœur de métier",
                 ].map((benefit) => (
                   <div key={benefit} className="flex items-start gap-3">
-                    <div className="bg-blue-600 rounded-full p-1 mt-1">
+                    <div className="bg-orange-600 rounded-full p-1 mt-1">
                       <svg
                         className="h-3 w-3 text-white"
                         fill="currentColor"
@@ -193,7 +193,7 @@ export function SolutionsLogistiquesPage() {
               <Card className="bg-blue-50 border-blue-200">
                 <CardContent className="p-8">
                   <div className="flex items-center gap-3 mb-4">
-                    <TrendingUp className="h-10 w-10 text-blue-600" />
+                    <TrendingUp className="h-10 w-10 text-orange-600" />
                     <h3 className="text-2xl font-bold text-gray-900">
                       +15 ans d'expérience
                     </h3>
@@ -204,7 +204,7 @@ export function SolutionsLogistiquesPage() {
                     et votre secteur d'activité.
                   </p>
                   <Link to="/a-propos">
-                    <Button variant="link" className="text-blue-600 p-0">
+                    <Button variant="link" className="text-orange-600 p-0">
                       En savoir plus sur Enafret →
                     </Button>
                   </Link>
@@ -216,7 +216,7 @@ export function SolutionsLogistiquesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-orange-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Optimisons ensemble votre logistique
@@ -226,7 +226,7 @@ export function SolutionsLogistiquesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/devis">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
                 Demander un devis
               </Button>
             </Link>

@@ -38,7 +38,7 @@ export function AProposPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-r from-orange-600 to-orange-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -68,7 +68,7 @@ export function AProposPage() {
                   Constatant que de nombreuses entreprises cherchaient un partenaire capable de 
                   combiner l'expertise des grands groupes avec la proximité et la réactivité d'une 
                   structure à taille humaine, Faysal a créé Enafret avec une vision claire : 
-                  <strong className="text-blue-600"> placer le client au centre des intérêts</strong>.
+                  <strong className="text-orange-600"> placer le client au centre des intérêts</strong>.
                 </p>
                 <p>
                   Aujourd'hui, Enafret accompagne ses clients dans leurs besoins en transport 
@@ -89,7 +89,7 @@ export function AProposPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-blue-600">
+      <section className="py-16 bg-orange-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat) => (
@@ -120,7 +120,7 @@ export function AProposPage() {
                 <Card key={value.title} className="text-center hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
                     <div className="inline-flex items-center justify-center bg-blue-100 p-4 rounded-full mb-4">
-                      <Icon className="h-8 w-8 text-blue-600" />
+                      <Icon className="h-8 w-8 text-orange-600" />
                     </div>
                     <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
                     <p className="text-gray-600">{value.description}</p>
@@ -139,7 +139,7 @@ export function AProposPage() {
             <Card className="bg-gradient-to-br from-blue-50 to-white border-blue-100">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-blue-600 p-3 rounded-lg">
+                  <div className="bg-orange-600 p-3 rounded-lg">
                     <Target className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold">Notre Mission</h3>
@@ -155,7 +155,7 @@ export function AProposPage() {
             <Card className="bg-gradient-to-br from-blue-50 to-white border-blue-100">
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-blue-600 p-3 rounded-lg">
+                  <div className="bg-orange-600 p-3 rounded-lg">
                     <Briefcase className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold">Notre Expertise</h3>
@@ -182,7 +182,7 @@ export function AProposPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/devis">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <Button size="lg" className="bg-orange-600 hover:bg-orange-700">
                 Demander un devis
               </Button>
             </Link>

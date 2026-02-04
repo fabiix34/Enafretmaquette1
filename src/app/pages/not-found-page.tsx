@@ -8,7 +8,7 @@ export function NotFoundPage() {
         <h1 className="text-6xl font-bold text-gray-900 mb-4">404</h1>
         <p className="text-xl text-gray-600 mb-8">Page non trouvée</p>
         <Link to="/">
-          <Button className="bg-blue-600 hover:bg-blue-700">
+          <Button className="bg-orange-600 hover:bg-orange-700">
             Retour à l'accueil
           </Button>
         </Link>

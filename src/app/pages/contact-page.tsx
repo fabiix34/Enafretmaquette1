@@ -43,7 +43,7 @@ export function ContactPage() {
               </p>
               <Button
                 onClick={() => setIsSubmitted(false)}
-                className="bg-blue-600 hover:bg-blue-700"
+                className="bg-orange-600 hover:bg-orange-700"
               >
                 Envoyer un autre message
               </Button>
@@ -57,7 +57,7 @@ export function ContactPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-r from-orange-600 to-orange-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -81,28 +81,28 @@ export function ContactPage() {
                   <h3 className="text-xl font-semibold mb-6">Informations de contact</h3>
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
-                      <Phone className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                      <Phone className="h-5 w-5 text-orange-600 mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Téléphone</p>
                         <p className="text-gray-600">+33 (0)1 XX XX XX XX</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Mail className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                      <Mail className="h-5 w-5 text-orange-600 mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Email</p>
                         <p className="text-gray-600">contact@enafret.com</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <MapPin className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                      <MapPin className="h-5 w-5 text-orange-600 mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Adresse</p>
                         <p className="text-gray-600">France</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Clock className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                      <Clock className="h-5 w-5 text-orange-600 mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-medium">Horaires</p>
                         <p className="text-gray-600">Lun - Ven: 9h - 18h</p>
@@ -121,7 +121,7 @@ export function ContactPage() {
                   </p>
                   <Button
                     onClick={() => window.location.href = '/devis'}
-                    className="w-full bg-blue-600 hover:bg-blue-700"
+                    className="w-full bg-orange-600 hover:bg-orange-700"
                   >
                     Demander un devis
                   </Button>
@@ -214,7 +214,7 @@ export function ContactPage() {
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full bg-blue-600 hover:bg-blue-700"
+                      className="w-full bg-orange-600 hover:bg-orange-700"
                     >
                       Envoyer le message
                     </Button>

@@ -58,7 +58,7 @@ export function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/devis">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8">
+              <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-lg px-8">
                 Demander un devis
               </Button>
             </Link>
@@ -91,13 +91,13 @@ export function HomePage() {
                   <CardContent className="p-8">
                     <div className="flex items-start gap-4">
                       <div className="bg-blue-100 p-3 rounded-lg">
-                        <Icon className="h-8 w-8 text-blue-600" />
+                        <Icon className="h-8 w-8 text-orange-600" />
                       </div>
                       <div className="flex-1">
                         <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
                         <p className="text-gray-600 mb-4">{service.description}</p>
                         <Link to={service.link}>
-                          <Button variant="link" className="text-blue-600 p-0">
+                          <Button variant="link" className="text-orange-600 p-0">
                             En savoir plus →
                           </Button>
                         </Link>
@@ -129,7 +129,7 @@ export function HomePage() {
               return (
                 <div key={advantage.title} className="text-center">
                   <div className="inline-flex items-center justify-center bg-blue-100 p-4 rounded-full mb-4">
-                    <Icon className="h-10 w-10 text-blue-600" />
+                    <Icon className="h-10 w-10 text-orange-600" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{advantage.title}</h3>
                   <p className="text-gray-600">{advantage.description}</p>
@@ -141,7 +141,7 @@ export function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-orange-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Prêt à commencer ?
@@ -150,7 +150,7 @@ export function HomePage() {
             Obtenez votre devis personnalisé en quelques clics
           </p>
           <Link to="/devis">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8">
+            <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100 text-lg px-8">
               Demander un devis gratuit
             </Button>
           </Link>

@@ -39,7 +39,7 @@ export function ServicesPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-r from-orange-600 to-orange-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -80,7 +80,7 @@ export function ServicesPage() {
                   <div className={index % 2 === 1 ? "md:order-1" : ""}>
                     <div className="flex items-center gap-3 mb-4">
                       <div className="bg-blue-100 p-3 rounded-lg">
-                        <Icon className="h-8 w-8 text-blue-600" />
+                        <Icon className="h-8 w-8 text-orange-600" />
                       </div>
                       <h2 className="text-3xl font-bold">{service.title}</h2>
                     </div>
@@ -90,13 +90,13 @@ export function ServicesPage() {
                     <ul className="space-y-3 mb-8">
                       {service.features.map((feature) => (
                         <li key={feature} className="flex items-start gap-2">
-                          <ArrowRight className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                          <ArrowRight className="h-5 w-5 text-orange-600 mt-0.5 flex-shrink-0" />
                           <span className="text-gray-700">{feature}</span>
                         </li>
                       ))}
                     </ul>
                     <Link to={service.link}>
-                      <Button className="bg-blue-600 hover:bg-blue-700">
+                      <Button className="bg-orange-600 hover:bg-orange-700">
                         En savoir plus
                       </Button>
                     </Link>
@@ -119,7 +119,7 @@ export function ServicesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/devis">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <Button size="lg" className="bg-orange-600 hover:bg-orange-700">
                 Demander un devis
               </Button>
             </Link>

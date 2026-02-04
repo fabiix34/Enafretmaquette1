@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router";
 import { Button } from "@/app/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logoImage from '@/assets/logo.png';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,7 +29,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold text-blue-600">Enafret</span>
+              <img src={logoImage} alt="ENA Fret" className="h-12 w-auto" />
             </Link>
           </div>
 
@@ -38,17 +39,16 @@ export function Header() {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm transition-colors ${
-                  isActive(item.href)
-                    ? "text-blue-600"
-                    : "text-gray-700 hover:text-blue-600"
-                }`}
+                className={`text-sm transition-colors ${isActive(item.href)
+                    ? "text-orange-600"
+                    : "text-gray-700 hover:text-orange-600"
+                  }`}
               >
                 {item.name}
               </Link>
             ))}
             <Link to="/devis">
-              <Button className="bg-blue-600 hover:bg-blue-700">
+              <Button className="bg-orange-600 hover:bg-orange-700">
                 Demande de devis
               </Button>
             </Link>
@@ -78,11 +78,10 @@ export function Header() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block px-3 py-2 rounded-md text-base ${
-                    isActive(item.href)
-                      ? "bg-blue-50 text-blue-600"
+                  className={`block px-3 py-2 rounded-md text-base ${isActive(item.href)
+                      ? "bg-blue-50 text-orange-600"
                       : "text-gray-700 hover:bg-gray-50"
-                  }`}
+                    }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -93,7 +92,7 @@ export function Header() {
                 className="block px-3 py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button className="w-full bg-orange-600 hover:bg-orange-700">
                   Demande de devis
                 </Button>
               </Link>
